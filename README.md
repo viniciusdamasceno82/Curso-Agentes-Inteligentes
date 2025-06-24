@@ -1,4 +1,25 @@
-# Curso-Agentes-Inteligentes
+# Curso Agentes Autônomos com Redes Generativas
+
+<p align="center">
+    <picture>
+        <image src="/i2a2-instituto-inteligencia-artificial-aplicada.png" alt="Logo I2A2" width="60%">    
+    </picture>
+</p>
+
+    **Institut d'Intelligence Artificielle Appliquée**
+    Grupo de Trabalho Agentes Inteligentes
+    Relatório da Atividade: Agente de Análise de Notas Fiscais
+    Prof: Celso Azevedo
+    Alunos:
+    - Adriano Silva
+    - Alan Batessoco
+    - Carlos Santos
+    - Gabriel Brognoli
+    - Isabel Maito
+    - Nicholas Lemos
+    - Rogério Chaves
+    - Vanessa Léda
+    - Vinicius Damasceno
 
 ## 📝 Project Structure
 
@@ -73,6 +94,7 @@ agente_csv/
           btn_grafico.click(fn=criar_grafico_linha, outputs=...)
 
       demo.launch()
+
     ```
 
 5. Tratamento de erros / mensagens ao usuário
@@ -87,3 +109,18 @@ agente_csv/
     - Scripts de inicialização: executar.sh, executar.bat, iniciar.py.
     - Instruções no README: instalação e execução.
     - Observação sobre variáveis de ambiente para chaves (caso use APIs externas).
+
+7. Exemplos de Perguntas e Respostas
+
+Pergunta: Qual é o fornecedor que teve maior montante recebido?
+Como foi obtida:
+
+    ```
+    fornecedor_maior = cabecalho.groupby("RAZÃO SOCIAL EMITENTE")["VALOR NOTA FISCAL"].sum().sort_values(ascending=False).head(1)
+
+    Resposta (exemplo):
+
+    RAZÃO SOCIAL EMITENTE
+    CHEMYUNION LTDA    1292418.75
+
+    ```
