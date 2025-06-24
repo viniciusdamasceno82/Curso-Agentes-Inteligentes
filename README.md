@@ -2,6 +2,7 @@
 
 ## 📝 Project Structure
 
+```
 agente_csv/
 │
 ├── data/
@@ -16,3 +17,4 @@ agente_csv/
 ├── agente_csv_app.py # Script principal com interface Gradio
 ├── executar.bat / executar.sh # Scripts para iniciar a aplicação
 └── outros scripts auxiliares # Por exemplo, scripts para build (PyInstaller)
+```
