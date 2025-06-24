@@ -28,6 +28,14 @@ Alunos:
 
 ## 📝 Project Structure
 
+1. Framework Escolhida
+    - **Gradio**: para a interface do usuário, permitindo criar componentes web (botões, dropdowns) de forma simples em Python e disponibilizar localmente ou em nuvem.
+    - **Pandas**: para carregamento e manipulação dos dados CSV (agrupamentos, somas, estatísticas).
+    - **Plotly**: para gerar gráficos interativos (linha, pizza, etc.) exibidos na interface.
+    - **Zipfile (Python stdlib)**: para descompactar o arquivo ZIP fornecido (202401_NFs.zip).
+    - **Tkinter (opcional)**: caso tenha sido utilizada uma interface desktop minimal, mas a interface principal usa Gradio.
+    - Outras bibliotecas complementares conforme necessidade (ex.: os, sys, threading para organização do aplicativo).
+
 ```
 agente_csv/
 │
