@@ -2,7 +2,7 @@
 
 <p align="center">
     <picture>
-        <image src="/i2a2-instituto-inteligencia-artificial-aplicada.png" alt="Logo I2A2" width="60%">    
+        <image src="/i2a2-instituto-inteligencia-artificial-aplicada.png" alt="Logo I2A2" width="30%">    
     </picture>
 </p>
 
