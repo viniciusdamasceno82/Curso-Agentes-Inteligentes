@@ -1,4 +1,4 @@
-# Curso Agentes Autônomos com Redes Generativas
+## Curso Agentes Autônomos com Redes Generativas
 
 <p align="center">
     <picture>
