@@ -2,24 +2,25 @@
 
 <p align="center">
     <picture>
-        <image src="/i2a2-instituto-inteligencia-artificial-aplicada.png" alt="Logo I2A2" width="30%">    
+        <image src="/i2a2-instituto-inteligencia-artificial-aplicada.png" alt="Logo I2A2" width="30%">  
     </picture>
 </p>
 
-    **Institut d'Intelligence Artificielle Appliquée**
-    Grupo de Trabalho Agentes Inteligentes
-    Relatório da Atividade: Agente de Análise de Notas Fiscais
-    Prof: Celso Azevedo
-    Alunos:
-    - Adriano Silva
-    - Alan Batessoco
-    - Carlos Santos
-    - Gabriel Brognoli
-    - Isabel Maito
-    - Nicholas Lemos
-    - Rogério Chaves
-    - Vanessa Léda
-    - Vinicius Damasceno
+**Institut d'Intelligence Artificielle Appliquée**
+**Grupo de Trabalho Agentes Inteligentes**
+Relatório da Atividade: Agente de Análise de Notas Fiscais
+Prof: Celso Azevedo
+Alunos:
+
+-   Adriano Silva
+-   Alan Batessoco
+-   Carlos Santos
+-   Gabriel Brognoli
+-   Isabel Maito
+-   Nicholas Lemos
+-   Rogério Chaves
+-   Vanessa Léda
+-   Vinicius Damasceno
 
 ## 📝 Project Structure
 
