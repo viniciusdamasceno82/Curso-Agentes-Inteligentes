@@ -74,3 +74,16 @@ agente_csv/
 
       demo.launch()
     ```
+
+5. Tratamento de erros / mensagens ao usuário
+
+    - Mensagens claras se o ZIP não estiver presente ou estiver corrompido.
+    - Verificar existência de colunas esperadas; em caso negativo, log/alerta.
+    - Validação dos inputs: categorias compatíveis com o tipo selecionado.
+
+6. Build e Deploy
+
+    - .requirements.txt com dependências exatas (gradio, pandas, plotly).
+    - Scripts de inicialização: executar.sh, executar.bat, iniciar.py.
+    - Instruções no README: instalação e execução.
+    - Observação sobre variáveis de ambiente para chaves (caso use APIs externas).
