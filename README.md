@@ -11,7 +11,9 @@
 **Grupo de Trabalho Agentes Inteligentes**
 
 Relatório da Atividade: Agente de Análise de Notas Fiscais
+
 Prof: Celso Azevedo
+
 Alunos:
 
 -   Adriano Silva
@@ -115,8 +117,8 @@ agente_csv/
 
 7. Exemplos de Perguntas e Respostas
 
-Pergunta: Qual é o fornecedor que teve maior montante recebido?
-Como foi obtida:
+-   Pergunta: Qual é o fornecedor que teve maior montante recebido?
+-   Como foi obtida:
 
     ```
     fornecedor_maior = cabecalho.groupby("RAZÃO SOCIAL EMITENTE")["VALOR NOTA FISCAL"].sum().sort_values(ascending=False).head(1)
@@ -125,5 +127,45 @@ Como foi obtida:
 
     RAZÃO SOCIAL EMITENTE
     CHEMYUNION LTDA    1292418.75
+
+    ```
+
+-   Pergunta: Qual item (produto/serviço) teve maior volume entregue (em quantidade)?
+-   Como foi obtida:
+
+    ```
+    item_maior = itens.groupby("DESCRIÇÃO DO PRODUTO/SERVIÇO")["QUANTIDADE"].sum().sort_values(ascending=False).head(1)
+
+    Resposta (exemplo):
+
+    DESCRIÇÃO DO PRODUTO/SERVIÇO
+    DIPIFARMA INJETÁVEL    5000.0
+
+    ```
+
+-   Pergunta: Quantas notas fiscais existem de cada fornecedor (top 10)?
+-   Como foi obtida:
+
+    ```
+    notas_por_fornecedor = cabecalho["RAZÃO SOCIAL EMITENTE"].value_counts().head(10)
+
+    Resposta (exemplo):
+
+    FORNECEDOR A    12
+    FORNECEDOR B     9
+
+    ```
+
+-   Pergunta: Qual a distribuição de valores das notas (mínimo, máximo e média)?
+-   Como foi obtida:
+
+    ```
+    stats = cabecalho["VALOR NOTA FISCAL"].describe()[["min", "max", "mean"]]
+
+    Resposta (exemplo):
+
+    Mínimo: 20.00
+    Máximo: 1.292.418,75
+    Média: 3.371,XX
 
     ```
