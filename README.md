@@ -40,14 +40,16 @@ agente_csv/
     - Exemplos:
 
     ```
-      responder_filtros(tipo, categoria), criar_grafico_linha(), criar_grafico_pizza(), criar_tabela_fornecedores().
+      responder_filtros(tipo, categoria),
+      criar_grafico_linha(),
+      criar_grafico_pizza(),
+      criar_tabela_fornecedores().
     ```
 
     - Uso de operações
 
     ```
      Pandas: groupby, sum, value_counts, describe, etc.
-
     ```
 
 4. Interface com Gradio
@@ -58,10 +60,17 @@ agente_csv/
     ```
     with gr.Blocks() as demo:
           tipo_dropdown = gr.Dropdown(choices=["Fornecedor", "Item", ...], label="Tipo de análise")
+
           categoria_dropdown = gr.Dropdown(choices=["Maior valor total", "Menor valor total", ...], label="Categoria")
+
           output_text = gr.Textbox(label="Resultado")
+
           btn = gr.Button("Gerar Resposta")
+
           btn.click(fn=responder_filtros, inputs=[tipo_dropdown, categoria_dropdown], outputs=output_text)
-          # Adicionar sessões para gráficos: btn_grafico.click(fn=criar_grafico_linha, outputs=...)
+
+          # Adicionar sessões para gráficos:
+          btn_grafico.click(fn=criar_grafico_linha, outputs=...)
+
       demo.launch()
     ```
