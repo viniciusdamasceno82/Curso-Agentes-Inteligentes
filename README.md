@@ -7,7 +7,9 @@
 </p>
 
 **Institut d'Intelligence Artificielle Appliquée**
+
 **Grupo de Trabalho Agentes Inteligentes**
+
 Relatório da Atividade: Agente de Análise de Notas Fiscais
 Prof: Celso Azevedo
 Alunos:
